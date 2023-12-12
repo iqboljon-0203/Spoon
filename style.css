@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.header {
+  width: 100%;
+  background-image: url("./img/IMAGE.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 30px;
+}
+.navbar {
+  width: 100%;
+  padding: 1em 0px;
+}
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar_list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.navbar_item {
+  padding: 10px 20px;
+  color: #fff;
+  font-family: Libre Franklin;
+  font-size: 0.48em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0.8em; /* 171.429% */
+}
+.navbar_button {
+  border-radius: 4px;
+  border: 2px solid #fff;
+  padding: 11px 17px;
+  color: #fff;
+  font-family: Libre Franklin;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0.8em; /* 171.429% */
+  background: none;
+}
+.burger{
+    display: none;
+}
+@media only screen and (max-width: 900px) {
+	.navbar_list{
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+}
+.main {
+  width: 100%;
+  padding-top: 115px;
+  padding-bottom: 120px;
+  font-size: 80px;
+}
+.main_title {
+  color: #fff;
+  text-align: center;
+  font-family: Libre Franklin;
+  font-size: 0.89em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 0.96em; /* 109.859% */
+  letter-spacing: 1px;
+  margin-bottom: 0.45em;
+}
+.main_text {
+  color: #fff;
+  text-align: center;
+  font-family: IBM Plex Mono;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 184.615% */
+  margin-bottom: 60px;
+}
+.main_button {
+  border-radius: 4px;
+  background: #5ab963;
+  padding: 15px 30px;
+  color: #fff;
+  text-align: center;
+  font-family: Libre Franklin;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0.42em; /* 187.5% */
+  display: block;
+  margin: 0 auto;
+  border: none;
+}
+@media only screen and (max-width: 500px) {
+    .main{
+        font-size: 60px;
+    }
+    .main_text{
+        line-height: 18px;
+    }
+}
+
+.section {
+  width: 100%;
+  padding-top: 120px;
+  padding-bottom: 229px;
+}
+.section_title {
+    width: 45%;
+  color: #999;
+  font-family: Libre Franklin;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 36px;
+  margin-bottom: 54px;
+}
+.section_title strong {
+  color: #000;
+  font-family: Libre Franklin;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+}
+.section_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  gap:20px;
+}
+.section_item {
+  padding-left: 41px;
+  padding-top: 51px;
+  padding-right: 64px;
+  padding-bottom: 109px;
+  border: 1px solid #f7f7f7;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.05);
+  font-size: 30px;
+}
+.section_item_img {
+  margin-bottom: 29px;
+}
+.section_item_title {
+  margin-bottom: 13px;
+  color: #000;
+  font-family: Libre Franklin;
+  font-size: 0.52em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+}
+.section_item_text {
+  color: #999;
+  font-family: IBM Plex Mono;
+  font-size: 0.42em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 184.615% */
+}
+@media only screen and (max-width: 800px) {
+
+    .section_title{
+        font-size: 18px;
+        line-height: 32px;
+        width: 100%;
+    }
+    .section_list{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .section_item{
+        width: 48%;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .section_list{
+        flex-wrap: wrap;
+    }
+    .section_item{
+        width: 100%;
+    }
+    .section_item_text{
+        font-size: 24px;
+    }
+    .section_item_title{
+        font-size: 28px;
+    }
+    .section_item_img{
+        width: 30%;
+    }
+    .section_item{
+        padding: 50px;
+    }
+}
+@media only screen and (max-width: 650px) {
+    
+    .section_item_text{
+        font-size: 16px;
+    }
+    .section_item_title{
+        font-size: 18px;
+    }
+}
+
